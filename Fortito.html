@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="tet/css" href="Fortito.css">
+  <link rel="stylesheet" type="tet/css" href="css/Fortito.css">
   <title>Fortito</title>
 
 </head>
@@ -16,7 +16,7 @@
     //Este programa sirve para sacar 10 veces el mensaje "hola"
 
     var meses=[
-      "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Noviembre", "Diciembre"
+      "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Mikhael",  "Noviembre", "Diciembre"
     ];
 
   /*
@@ -24,7 +24,17 @@
     document.write(meses[1] + "<br/>");
   */
 
-  for(z=0;z<11;z++){
+  for(z=0;z<6;z++){
+    document.write("<div class=Mesest>" + meses[z] + "</div>");
+  }
+
+  for(z=7; z<12; z++){
+    document.write("<div class=Mesest2>" + meses[z] + "</div>");
+  }
+
+  //Este es un comando cuando no conces el límite del array
+
+  for(z=0; z<meses.length; z++){
     document.write("<div class=Mesest>" + meses[z] + "</div>");
   }
 

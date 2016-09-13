@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/For_nombres.css">
+  <title>Tus nombres</title>
+
+</head>
+<body>
+  <div id="Contenedor">
+    <div class="titulo">Escribe tus nombres</div>
+  <div id="Cuerpo">
+
+  <script type="text/javascript">
+
+    var Nombres=new Array(); //Esto es para crear un array indefinido
+
+    var nombreIntroducido= ""; //He indicado que es una cada na vacia
+
+    var contador=0;
+
+    while(nombreIntroducido != "salir"){
+
+      nombreIntroducido=prompt("Escribe el nombre que quieras y luego dale a aceptar. Cuando termines, escribe salir, para que veas los que has introducido");
+
+      Nombres[contador]=nombreIntroducido;
+      contador++;
+    }
+
+    Nombres.pop(); //sirve para eliminar la palabra salir del array y asi no se escriba en la pagina.
+
+    for (var j=0; j<Nombres.length; j++){
+      document.write("<div class=Nombres><ul><li>" + Nombres [j] + "</div></li>");
+    }
+
+    document.write("</ul>");
+
+  </script>
+
+</div>
+</div>
+</body>
+</html>
