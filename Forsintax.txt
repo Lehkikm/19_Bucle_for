@@ -1,0 +1,9 @@
+SINTAXIS DEL BUCLE FOR
+-----------------------------
+
+
+for (inicio; condicion; incremento/decremento){
+  //codigo a repetir mientras la condicion sea cierta.
+}
+
+//continuacion del programa
